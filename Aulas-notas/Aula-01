@@ -1,0 +1,35 @@
+<!DOCTYPE html><!--Estrutura inicial básica de marcação com HTML-->
+<!--Comentários realizados com base nas informações trazidas em aula, para melhor entendimento da estrutura em questão-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="pt-br"> <!--informação para o programa de que a linguagem é em português (Brasil)-->
+    <title>Document</title> <!--Título do documento (que fica na aba do navegador)-->
+</head>
+
+<body>
+    <header><!--Estutura semantica do HTML5-->
+        <h1>Aula 01</h1> <!--Título do documento escrito-->
+        <h2>Intridução à estrutura de marcação: HTML</h2>
+        <!--outro tipo de título, podendo ser utilizado, nesse caso, como subtítulo-->
+    </header>
+    <main><!--Estutura semantica do HTML5. Como o própio nome já determinado, só pode haver um "conteúdo principal"-->
+        <section><!--Estutura semantica do HTML5-->
+            <p>
+                Este é um parágrafo exemplificativo para demonstrar a estrutura criada com a marcação em
+                HTML.<br><!--Estrutura de identificação de uma quebra de linha dento do parágrafo.-->
+                <hr><!--Estutura visual que insere uma linha horizontal no texto-->Progredindo sempre para continuar
+                aprendendo.
+            </p>
+        </section>
+
+    </main>
+    <footer><!--Estutura semantica do HTML5 (Estrutura para rodapé da página)-->
+        <p>Todos os direito reservados. Wendel, 2026.</p>
+
+    </footer>
+
+</body>
+
+</html>
