@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta lang="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <img src="assets/Gemini_Generated_Image_xass45xass45xass.png" alt="Minha foto" width="250px">
+    <h1>Wendel Spargoli Bernardo da Silva</h1>
+</header>
+
+<body>
+    <main>
+        <section>
+            <p>Após sair do ensino médio, cursei, pela primeira vez, <strong>Direito</strong> na UNI-RN. Apesar de ter sido
+                um caminho
+                difícil, consegui me formar (com um IRA até alto, para alguém que que não gostava tanto assim do curso).
+                Após uns 2 anos, mais ou menos, consegui passar na OAB e me tornar <strong> Advogado</strong>, o que iniciou um outro ciclo na
+                minha vida.</p>
+            <p>Após uns 2 anos tentando ser advogado, não consegui me encaixar na profissão, não sei se por falta de
+                oportunidade, ou devido a meu estilo de trabalho. Quando me perguntam, gosto sempre de deixar claro que
+                possuo um estilo mais social, até porque, gosto muito de ajudar outras pessoas, mas parece que não é isso
+                que os escritórios de advocacia estão procurando. Agora, tento um novo caminho na tecnologia no curso de <strong> Sistemas de Informação.</strong></p>
+        </section>
+        <section>
+            <h3>Alguns dos meus hobbies são:</h3>
+            <ul>
+                <li>Jogar</li>
+                <li>Assistir séries e filmes</li>
+                <li>Conversar</li>
+                <li>Aprender coisas novas</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Algumas das minhas metas acadêmicas:</h3>
+            <ol>
+                <li>Ter um bom rendimento acadêmico</li>
+                <li>Aprender cada vez mais sobre programação e tecnologia</li>
+                <li>Terminar o curso com o IRA alto</li>
+            </ol>
+        </section>
+        <section>
+            <h3>Uma breve tabela com minhas formações acadêmicas:</h3>
+            <table border="10">
+                <th>Ano</th>
+                <th>Curso</th>
+                <th>Status</th>
+
+                <tr>
+                    <td>2021</td>
+                    <td>Graduação em Direito</td>
+                    <td>Concluído</td>
+                </tr>
+                <tr>
+                    <td>2026</td>
+                    <td>Pós-Graduação em LGPD</td>
+                    <td>Concluído</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>Graduação Sistemas de informação</td>
+                    <td>Em andamento</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h3>Um áudio teste para apresentação</h3>
+            <audio controls><source src="media/a-risada-do-kiko.mp3" type="audio/mp3"></audio>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/wendel-spargoli-4b401b376" target="_blank">Link para o meu perfil no LinkeInd</a>
+    </footer>
+
+</body>
+
+</html>
