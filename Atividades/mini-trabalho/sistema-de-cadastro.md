@@ -18,7 +18,7 @@
   - while com sentinela · tratar opção inválida sem quebrar o programa
 
 * Cadastrar registro
-** Ler os dados com input(), converter os tipos e adicionar à lista com append()
+- Ler os dados com input(), converter os tipos e adicionar à lista com append()
 
 * Listar todos os registros
 ** Percorrer com for e exibir em formato de tabela, usando alinhamento na f-string
