@@ -15,7 +15,7 @@
 
 ## Requisitos obrigatórios
 * Menu em laço, com opção de sair
-** while com sentinela · tratar opção inválida sem quebrar o programa
+*   while com sentinela · tratar opção inválida sem quebrar o programa
 
 * Cadastrar registro
 ** Ler os dados com input(), converter os tipos e adicionar à lista com append()
