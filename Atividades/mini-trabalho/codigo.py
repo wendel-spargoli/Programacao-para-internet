@@ -14,7 +14,7 @@ Jogos = [
 
 # Criação de Menu
 def exibir_menu():
-    print ("\nBem-vindo(a) à sua lista de jogos! O que você quer fazer hoje? \n 1 - Listar jogos \n 2 - Cadastrar jogos \n 3 - Buscar jogo \n 4 - Alterar jogo \n 5 - Remover jogo \n 0 - Sair");
+    print ("\nBem-vindo(a) à sua lista de jogos! O que você quer fazer hoje? \n 1 - Listar jogos \n 2 - Cadastrar jogos \n 3 - Buscar jogo \n 4 - Alterar jogo \n 5 - Remover jogo \n 6 - Jogo mais caro \n 0 - Sair");
 
 #Listagem de jogos
 def listar_tudo():
@@ -77,16 +77,38 @@ def alterar_jogo():
                 print("\n Alteração realizada com sucesso!");
                 return
             elif opcao_alteracao == "4" or opcao_alteracao == "04": #Voltar ao menu anterior
-                return
+                return;
             else:
                 print("\nNúmero inválido!");
                 alterar_jogo();
-        else:
-            print("\nEste nome é inválido!");
-            alterar_jogo();
+    print("\nEste nome é inválido!"); #Fora do laço porque dentro do "for" não permitia checar todos os jogos. No primeiro jogo, já passava para o "else"
     
 
 # Remoção de registro
+def remocao_jogo():
+    print("\nQual jogo você gostaria de remover da lista?");
+    termo_busca = input("\nDigite o nome completo do jogo a ser removido. (Se estiver em dúvidas de como está escrito, escreva 'listagem' para abrir a lista de jogos): ").strip();
+
+    if termo_busca.lower() == "listagem": # Comando para o caso de a pessoa escolher listar os jogos.
+        listar_tudo();
+    
+
+    for jogo in Jogos:
+        if termo_busca.lower() == jogo["nome"].lower():
+            Jogos.remove(jogo);
+            print("\nJogo removido com sucesso!");
+            return;
+
+# Verificação de jogo de maior valor
+def mais_caro():
+    jogo_mais_caro = Jogos[0] # Definindo o primeiro item da lista como o mais caro para comparações
+
+    for jogo in Jogos:
+        if float(jogo["Preço"]) > float(jogo_mais_caro["Preço"]):
+            jogo_mais_caro = jogo;
+        print(f"\nO jogo mais caro da lista é {jogo_mais_caro['nome']}, no valor de R$ {jogo_mais_caro['Preço']:.2f} reais.");
+
+# Validação das entradas
 
 # Menu principal
 def principal():
@@ -101,6 +123,10 @@ def principal():
             buscar_jogo();
         elif opcao == "4" or opcao == "04":
             alterar_jogo();
+        elif opcao == "5" or opcao == "05":
+            remocao_jogo();
+        elif opcao == "6" or opcao == "06":
+            mais_caro();
         elif opcao == "0" or opcao == "00":
             break;
         else:
